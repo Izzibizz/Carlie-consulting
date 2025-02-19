@@ -39,10 +39,10 @@ export const Header = () => {
         animate={{ clipPath: "circle(200% at 50% 50%)" }} 
         exit={{ clipPath: "circle(20% at 200% 100%)" }} 
         transition={{ duration: 3, ease: [0, 0.1, 0.25, 1.2] }}
-        className="fixed top-0 right-0 h-screen w-screen overflow-hidden font-dream text-4xl bg-rose-200  flex justify-end px-8 "
+        className="fixed top-0 right-0 h-svh w-screen overflow-hidden font-dream text-4xl bg-rose-200  flex justify-end px-8 "
           ref={dropdownRef}
         >
-          <ul className="flex flex-col laptop:flex-row items-end gap-8 font-light absolute bottom-10 animate-fadeIn">
+          <ul className="flex flex-col laptop:flex-row items-end gap-8 font-light absolute bottom-20 animate-fadeIn">
             {directions.map((link) => (
                 <li
                 key={link.id}
