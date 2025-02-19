@@ -19,7 +19,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed h-32 w-16 z-40 right-0 top-[80vh] p-3 py-6 bg-rose-200 flex flex-col items-center justify-between gap-4 rounded-l-2xl">
+    <header className="fixed h-32 w-16 z-40 right-0 top-[65vh] p-3 py-6 bg-rose-200 flex flex-col items-center justify-between gap-4 rounded-l-2xl">
       <div className={`group cursor-pointer animate-fadeIn flex gap-1`} onClick={() => setIsOpen(!isOpen)}>
         <span className={`w-2 h-2 transition-all group-hover:animate-bounce bg-stone-800 rounded-full `}></span>
         <span className={`w-2 h-2 transition-all group-hover:animate-bounce-delay1 bg-stone-800 rounded-full `}></span>
