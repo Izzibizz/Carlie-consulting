@@ -54,7 +54,7 @@ export const Header = () => {
               </li>
             ))}
           </ul>
-          <RxCross1 className="absolute x-20 text-stone-800 w-10 h-10 top-8 right-8 animate-fadeIn cursor-pointer" onClick={() => setIsOpen(false)}/>
+          <RxCross1 className={`absolute x-20 text-stone-800 w-10 h-10 top-8 right-8 animate-fadeIn cursor-pointer`} onClick={() => setIsOpen(false)}/>
         </motion.div>
       )}
       </AnimatePresence>

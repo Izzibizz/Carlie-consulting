@@ -24,6 +24,7 @@
     --animate-bounce-delay2: bounce 1s infinite ease-in-out 0.5s;
     --animate-longFadeIn: fadeIn 3s ease-in both;
     --animate-fadeIn: fadeIn 1s ease-in both;
+    --animate-spin: spin 10s ease-in infinite;
     
    
   
@@ -39,6 +40,11 @@
     0% { transform: translateY(0) }
     50% { transform: translateY(-3px)}
     100% { transform: translateY(0)}
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
   }
 
   }
