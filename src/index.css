@@ -9,13 +9,10 @@
     --breakpoint-desktop: 1300px;
   
     --color-light: rgb(240,208, 195);
-    --color-dark: rgb(160, 25, 25);
-    --color-gray-blue:rgb(77, 81, 103);
-    --color-dark-blue: rgb(2, 2, 21);
     --color-warm-white: rgb(252, 250, 243);
-    --color-dark-purple: rgb(65, 39, 132);
     --color-warm-red: rgb(236, 99, 80);
     --color-light-purple: rgb(101, 101, 180);
+    --color-green: rgb(188, 167,	88);
     --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
     --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
   
