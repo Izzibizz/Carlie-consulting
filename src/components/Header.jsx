@@ -42,7 +42,7 @@ export const Header = () => {
         className="fixed top-0 right-0 h-screen w-screen overflow-hidden font-dream text-4xl bg-rose-200  flex justify-end px-8 "
           ref={dropdownRef}
         >
-          <ul className="flex flex-col laptop:flex-row items-end gap-8 font-light absolute bottom-[20%] animate-fadeIn">
+          <ul className="flex flex-col laptop:flex-row items-end gap-8 font-light absolute bottom-[20%] laptop:bottom-10 animate-fadeIn">
             {directions.map((link) => (
                 <li
                 key={link.id}
@@ -54,7 +54,7 @@ export const Header = () => {
               </li>
             ))}
           </ul>
-          <RxCross1 className={`absolute x-20 text-stone-800 w-10 h-10 top-8 right-8 animate-fadeIn cursor-pointer`} onClick={() => setIsOpen(false)}/>
+          <RxCross1 className={`absolute z-20 text-stone-800 w-10 h-10 top-8 right-8 animate-longFadeIn cursor-pointer`} onClick={() => setIsOpen(false)}/>
         </motion.div>
       )}
       </AnimatePresence>
