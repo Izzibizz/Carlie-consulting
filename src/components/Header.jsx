@@ -39,10 +39,10 @@ export const Header = () => {
         animate={{ clipPath: "circle(200% at 50% 50%)" }} 
         exit={{ clipPath: "circle(20% at 200% 100%)" }} 
         transition={{ duration: 3, ease: [0, 0.1, 0.25, 1.2] }}
-        className="fixed top-0 right-0 h-screen w-screen overflow-hidden font-dream text-4xl bg-rose-200  flex justify-end px-8 "
+        className="fixed top-0 right-0 h-screen w-screen overflow-hidden text-4xl bg-rose-200 flex flex-col laptop:flex-row gap-8 justify-end items-end px-8 pb-40 laptop:pb-10"
           ref={dropdownRef}
         >
-          <ul className="flex flex-col laptop:flex-row items-end gap-8 font-light absolute bottom-[20%] laptop:bottom-10 animate-fadeIn">
+          <ul className="flex flex-col laptop:flex-row items-end gap-8 font-light justify-end ">
             {directions.map((link) => (
                 <li
                 key={link.id}
@@ -54,7 +54,7 @@ export const Header = () => {
               </li>
             ))}
           </ul>
-          <RxCross1 className={`absolute z-20 text-stone-800 w-10 h-10 top-8 right-8 animate-longFadeIn cursor-pointer`} onClick={() => setIsOpen(false)}/>
+          <RxCross1 className={` text-stone-800 w-10 h-10 cursor-pointer hover:animate-spin`} onClick={() => setIsOpen(false)}/>
         </motion.div>
       )}
       </AnimatePresence>
