@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Poiret+One&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: dreamAvenue;
+  src: url("./assets//fonts/FontsFree-Net-Dream-Avenue.ttf")
+}
 
 @theme {
     --font-round: "Poiret One", "serif";
     --font-body: "Figtree", "serif";
+    --font-dream: "dreamAvenue", "serif";
   
     --breakpoint-tablet: 600px;
     --breakpoint-laptop: 1025px;

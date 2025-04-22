@@ -27,7 +27,7 @@ export const Header = () => {
 
       </div>
       <img
-        src="https://res.cloudinary.com/dbf8xygxz/image/upload/v1739972929/c-2.small_ugjpdi.svg"
+        src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1745326032/c-2.small_h01hqi.svg"
         alt="logo carlie consulting"
         className="w-8 h-8  cursor-pointer"
         onClick={() => scrollToTop()}
