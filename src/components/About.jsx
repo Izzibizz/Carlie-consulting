@@ -22,9 +22,9 @@ export const About = () => {
 
   return (
     <section>
-      <div className="w-10/12 mx-auto flex flex-col laptop:flex-row py-10 laptop:py-20">
+      <div className="w-10/12 mx-auto flex flex-col gap-10 laptop:flex-row py-20">
         <div className=" flex flex-col gap-6 ">
-          <div className="bg-warm-white p-6 laptop:p-10 border-3 laptop:border-4 h-fit w-full gap-6 flex flex-col max-w-[600px]">
+          <div className="bg-warm-white p-6 tablet:p-10 border-3 laptop:border-4 h-fit w-full gap-6 flex flex-col max-w-[600px]">
             <h2 className="text-3xl laptop:text-4xl font-dream">Vilka är vi?</h2>
             <p className="text-justify font-body">
               Eaque ipsa quae ab illo inventore veritatis et quasi architecto
@@ -42,13 +42,13 @@ export const About = () => {
               alt="Carolina"
               className={` ${
                 showMoreCarolina
-                  ? "w-full laptop:w-1/3"
+                  ? "w-11/12 mx-auto mt-4 laptop:w-1/3"
                   : "h-[200px] w-[160px] laptop:w-[460px] "
               }  h-full  object-cover aspect-[3/4]`}
             />
             {!showMoreCarolina ? (
               <>
-                <h3 className="font-bold text-3xl laptop:text-[30px] absolute top-1 left-2 laptop:top-3 laptop:left-5 font-dream">
+                <h3 className="font-bold text-2xl laptop:text-[30px] absolute top-1 left-2 laptop:top-3 laptop:left-5 font-dream">
                   Carolina
                 </h3>
                 <button
@@ -92,7 +92,7 @@ export const About = () => {
               >
                 Läs mer
               </button>
-              <h3 className="font-bold text-3xl laptop:text-[30px] absolute top-1 right-2 laptop:top-3 laptop:right-5 font-dream">
+              <h3 className="font-bold text-2xl laptop:text-[30px] absolute top-1 right-2 laptop:top-3 laptop:right-5 font-dream">
                 Emelie
               </h3>
             </>
@@ -119,9 +119,9 @@ export const About = () => {
             alt="Emelie"
             className={` ${
               showMoreEmelie
-                ? "w-full laptop:w-1/3"
+                ? "w-11/12 mx-auto pt-6 laptop:w-1/3"
                 : "h-[200px] w-[160px] laptop:w-[460px] "
-            }  h-auto tablet:w-[250px] object-cover aspect-[3/4] `}
+            }  h-auto  object-cover aspect-[3/4] `}
           />
         </div>
       </div>

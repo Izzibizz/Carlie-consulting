@@ -103,7 +103,7 @@ export const Header = () => {
           } bg-stone-800 rounded-full `}
         ></span>
       </div>
-      <img src={isMobile ? textlogo : textlogovert} className={` w-[200px] laptop:w-[80px] cursor-pointer transition-opacity duration-1000 ${
+      <img src={isMobile ? textlogo : textlogovert} className={` w-[200px] laptop:w-[40px] cursor-pointer transition-opacity duration-1000 ${
            isMobile
            ? "opacity-100"
            : isScrolled ? "opacity-100" : "opacity-0"
@@ -124,7 +124,7 @@ export const Header = () => {
             animate={{ clipPath: "circle(200% at 50% 50%)" }}
             exit={{ clipPath: "circle(20% at 200% 100%)" }}
             transition={{ duration: 3, ease: [0, 0.1, 0.25, 1.2] }}
-            className="fixed top-0 right-0 h-screen w-screen overflow-hidden text-4xl bg-light-purple flex flex-col-reverse laptop:flex-col gap-8 items-end pr-4 pb-6 laptop:pb-0 laptop:pr-3 laptop:pt-8"
+            className="fixed top-0 right-0 h-screen w-screen overflow-hidden text-4xl bg-light-purple flex flex-col-reverse laptop:flex-col gap-8 items-end pr-6 pb-6 laptop:pb-0 laptop:pr-3 laptop:pt-8"
             ref={dropdownRef}
           >
             <RxCross1
