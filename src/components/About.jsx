@@ -48,7 +48,7 @@ export const About = () => {
             />
             {!showMoreCarolina ? (
               <>
-                <h3 className="font-bold text-2xl laptop:text-[30px] absolute top-1 left-2 laptop:top-3 laptop:left-5 font-dream">
+                <h3 className=" text-2xl laptop:text-[30px] absolute top-1 left-2 laptop:top-3 laptop:left-5 font-dream">
                   Carolina
                 </h3>
                 <button
@@ -60,7 +60,7 @@ export const About = () => {
               </>
             ) : (
               <div className="flex flex-col gap-4 py-10 px-8 text-justify animate-fadeIn">
-                <h4 className="font-bold text-3xl font-dream">Carolina</h4>
+                <h4 className=" text-3xl font-dream">Carolina</h4>
                 <p className="font-body">
                   Carolina har gedigen erfarenhet av restaurangbranschen i olika
                   roller, med särskilt fokus på nyetableringar. Hennes expertis
@@ -92,13 +92,13 @@ export const About = () => {
               >
                 Läs mer
               </button>
-              <h3 className="font-bold text-2xl laptop:text-[30px] absolute top-1 right-2 laptop:top-3 laptop:right-5 font-dream">
+              <h3 className=" text-2xl laptop:text-[30px] absolute top-1 right-2 laptop:top-3 laptop:right-5 font-dream">
                 Emelie
               </h3>
             </>
           ) : (
             <div className="flex flex-col gap-4 py-10 px-8 text-justify animate-fadeIn">
-              <h4 className="font-bold text-3xl font-dream">Emelie</h4>
+              <h4 className=" text-3xl font-dream">Emelie</h4>
               <p className="font-body">
                 Emelie kombinerar sin bakgrund inom restaurang med studier i
                 arkitektur och erfarenhet av projektledning. Hennes unika
