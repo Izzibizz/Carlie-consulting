@@ -7,13 +7,14 @@ import { ScrollToTop } from "./components/ScrollToTop";
 
 export const App = () => {
 
+
   return (
     <>
     <ScrollToTop />
     <div className=" max-w-screen min-h-screen flex flex-col overflow-hidden relative">
       <Header />
       <main className="flex-grow bg-warm-white">
-        <MainRoutes />
+        <MainRoutes  />
       </main>
       <Footer />
     </div>

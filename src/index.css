@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Poiret+One&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @font-face {
@@ -7,9 +7,8 @@
 }
 
 @theme {
-    --font-round: "Poiret One", "serif";
-    --font-body: "Figtree", "serif";
-    --font-dream: "dreamAvenue", "serif";
+    --font-body: "Raleway", sans-serif;
+    --font-dream: "dreamAvenue", serif;
   
     --breakpoint-tablet: 600px;
     --breakpoint-laptop: 1025px;
@@ -17,11 +16,7 @@
   
     --color-light: rgb(240,208, 195);
     --color-warm-white: rgb(252, 250, 243);
-    --color-warm-red: rgb(236, 99, 80);
-    --color-light-purple: rgb(101, 101, 180);
-    --color-green: rgb(188, 167,	88);
-    --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
-    --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+    --color-light-purple: rgb(244 183 214);
   
     --animate-bounce: bounce 1s infinite ease-in-out;
     --animate-bounce-delay1: bounce 1s infinite ease-in-out 0.3s;

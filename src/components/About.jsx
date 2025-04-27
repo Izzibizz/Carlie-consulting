@@ -22,11 +22,6 @@ export const About = () => {
 
   return (
     <section
-      className={`${
-        isLaptop
-          ? "bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1745325925/morph-bg3_zmmd3e.svg')]"
-          : "bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1745325921/morph-bg-mobile_w3wbag.svg')]"
-      } border-b-4 bg-repeat-y bg-top min-h-[100vh] font-dream`}
     >
       <div className="w-10/12 laptop:w-10/12 mx-auto flex flex-col laptop:flex-row py-10 laptop:py-20">
         <div className=" flex flex-col gap-6 ">
@@ -44,7 +39,7 @@ export const About = () => {
             className={`flex flex-col laptop:flex-row gap-4 bg-warm-white border border-3 laptop:border-6 relative h-fit w-fit max-w-[700px] tablet:h-[300px] laptop:h-[500px]`}
           >
             <img
-              src="https://res.cloudinary.com/dbf8xygxz/image/upload/v1739978658/091c9f2741908ab28d38d3b3013aed83_vhdp2b.jpg"
+              src=""
               alt="Carolina"
               className={` ${
                 showMoreCarolina ? "w-full laptop:w-1/3" : "h-[200px] w-[160px] laptop:w-[460px] "
@@ -57,7 +52,7 @@ export const About = () => {
                 </h3>
                 <button
                   onClick={() => setShowMoreCarolina(true)}
-                  className="absolute bg-red-200 rounded-full h-[100px] w-[100px] bottom-[-30px] right-[-40px] cursor-pointer"
+                  className="absolute bg-light-purple rounded-full h-[100px] w-[100px] bottom-[-30px] right-[-40px] cursor-pointer"
                 >
                   Läs mer
                 </button>
@@ -98,7 +93,7 @@ export const About = () => {
             <>
               <button
                 onClick={() => setShowMoreEmelie(true)}
-                className="absolute bg-red-200 rounded-full h-[100px] w-[100px] bottom-[-50px] left-[-50px] cursor-pointer"
+                className="absolute bg-light-purple rounded-full h-[100px] w-[100px] bottom-[-50px] left-[-50px] cursor-pointer"
               >
                 Läs mer
               </button>
@@ -133,7 +128,7 @@ export const About = () => {
             </div>
           )}
           <img
-            src="https://res.cloudinary.com/dbf8xygxz/image/upload/v1739978653/f5867cccdad8da28cc791b9b480306f1_yjtb3l.jpg"
+            src=""
             alt="Emelie"
             className={` ${
               showMoreEmelie ? "w-full laptop:w-1/3" : "h-[200px] w-[160px] laptop:w-[460px] "
