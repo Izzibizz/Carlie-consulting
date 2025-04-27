@@ -131,7 +131,7 @@ export const Header = () => {
               className={` text-stone-800 w-10 h-10 cursor-pointer laptop:mr-8`}
               onClick={() => setIsOpen(false)}
             />
-            <ul className="flex flex-col items-end gap-8 laptop:gap-12 font-light laptop:text-[60px] laptop:pr-10">
+            <ul className="flex flex-col items-end gap-8 laptop:gap-12 font-dream laptop:text-[60px] laptop:pr-10">
               {directions.map((link) => (
                 <li
                   key={link.name}
