@@ -63,7 +63,7 @@ console.log(showMoreCarolina, showMoreEmelie)
 
   return (
     <section>
-      <div className="w-10/12 mx-auto flex flex-col gap-20 laptop:gap-0 laptop:flex-row py-20" ref={mainRef}>
+      <div className="w-10/12 mx-auto flex flex-col gap-20 laptop:gap-0 laptop:flex-row pt-20 pb-38" ref={mainRef}>
         <div className=" flex flex-col gap-6 ">
           <div className="bg-warm-white p-6 tablet:p-10 border-3 laptop:border-4 h-fit w-full gap-6 flex flex-col max-w-[600px]">
             <h2 className="text-3xl laptop:text-4xl font-dream">Vilka är vi?</h2>
@@ -89,9 +89,9 @@ console.log(showMoreCarolina, showMoreEmelie)
             />
                             <button
                   onClick={() => handleShowMoreClick(!showMoreCarolina, "Carolina")}
-                  className={`z-20 absolute bg-light-purple rounded-full h-[100px] w-[100px] ${showMoreCarolina? "right-[-20px] bottom-[-40px]" : "bottom-[-30px] right-[-40px]"}  cursor-pointer`}
+                  className={`z-20 absolute bg-light-purple font-body rounded-full h-[100px] w-[100px] ${showMoreCarolina? "right-[-20px] bottom-[-40px]" : "bottom-[-30px] right-[-40px]"}  cursor-pointer`}
                 >
-                  {showMoreCarolina ? "Visa mindre" : "Läs mer"}
+                  {showMoreCarolina ? "Stäng" : "Läs mer"}
                 </button>
             {!showMoreCarolina ? (
              <h3 className=" text-2xl laptop:text-[30px] absolute top-1 left-2 laptop:top-3 laptop:left-5 font-dream">
@@ -119,9 +119,9 @@ console.log(showMoreCarolina, showMoreEmelie)
         ref={emelieRef}>
                         <button
                 onClick={() => handleShowMoreClick(!showMoreEmelie, "Emelie")}
-                className={`z-20 absolute bg-light-purple rounded-full h-[100px] w-[100px] ${showMoreEmelie? "bottom-[-70px] left-[-20px]" : "bottom-[-50px] left-[-50px]"} cursor-pointer`}
+                className={`z-20 absolute font-body bg-light-purple rounded-full h-[100px] w-[100px] ${showMoreEmelie? "bottom-[-70px] left-[-20px]" : "bottom-[-50px] left-[-50px]"} cursor-pointer`}
               >
-                {showMoreEmelie ? "Visa mindre" : "Läs mer"}
+                {showMoreEmelie ? "Stäng" : "Läs mer"}
               </button>
           {!showMoreEmelie ? (
 
