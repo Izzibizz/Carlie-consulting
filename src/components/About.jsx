@@ -64,8 +64,8 @@ console.log(showMoreCarolina, showMoreEmelie)
   return (
     <section>
       <div className="w-10/12 mx-auto flex flex-col gap-20 laptop:gap-0 laptop:flex-row pt-20 pb-38" ref={mainRef}>
-        <div className=" flex flex-col gap-6 ">
-          <div className="bg-warm-white p-6 tablet:p-10 border-3 laptop:border-4 h-fit w-full gap-6 flex flex-col max-w-[600px]">
+        <div className=" flex flex-col gap-6 laptop:gap-20 ">
+          <div className="bg-warm-white p-6 tablet:p-10 laptop:p-0 border-3 laptop:border-0 h-fit w-full gap-6 flex flex-col max-w-[600px]">
             <h2 className="text-3xl laptop:text-4xl font-dream">Vilka är vi?</h2>
             <p className="text-justify font-body">
               Eaque ipsa quae ab illo inventore veritatis et quasi architecto
@@ -83,7 +83,7 @@ console.log(showMoreCarolina, showMoreEmelie)
               alt="Carolina"
               className={` ${
                 showMoreCarolina
-                  ? "w-11/12 mx-auto mt-4 laptop:w-1/3"
+                  ? "w-10/12 mx-auto mt-8 laptop:w-1/3"
                   : "w-[200px] laptop:w-[460px] "
               }  h-full  object-cover aspect-[3/4]`}
             />
@@ -98,7 +98,7 @@ console.log(showMoreCarolina, showMoreEmelie)
                   Carolina
                 </h3>
             ) : (
-              <div className="flex flex-col gap-4 py-10 px-8 text-justify animate-fadeIn">
+              <div className="flex flex-col gap-4 py-10 w-10/12 mx-auto text-justify animate-fadeIn">
                 <h4 className=" text-3xl font-dream">Carolina</h4>
                 <p className="font-body">
                   Carolina har gedigen erfarenhet av restaurangg&shy;branschen i olika
@@ -129,7 +129,7 @@ console.log(showMoreCarolina, showMoreEmelie)
                 Emelie
               </h3>
           ) : (
-            <div className="flex flex-col gap-4 py-10 px-8 text-justify animate-fadeIn">
+            <div className="flex flex-col gap-4 py-10 w-10/12 mx-auto text-justify animate-fadeIn">
               <h4 className=" text-3xl font-dream">Emelie</h4>
               <p className="font-body">
                 Emelie kombinerar sin bakgrund inom restaurang med studier i
@@ -145,7 +145,7 @@ console.log(showMoreCarolina, showMoreEmelie)
             alt="Emelie"
             className={` ${
               showMoreEmelie
-                ? "w-11/12 mx-auto pt-6 laptop:w-1/3"
+                ? "w-10/12 mx-auto pt-8 laptop:w-1/3"
                 : "w-[200px] laptop:w-[460px] "
             }  h-auto  object-cover aspect-[3/4] `}
           />
