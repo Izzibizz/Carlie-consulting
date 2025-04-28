@@ -101,12 +101,12 @@ console.log(showMoreCarolina, showMoreEmelie)
               <div className="flex flex-col gap-4 py-10 w-10/12 mx-auto text-justify animate-fadeIn">
                 <h4 className=" text-3xl font-dream">Carolina</h4>
                 <p className="font-body">
-                  Carolina har gedigen erfarenhet av restaurangg&shy;branschen i olika
-                  roller, med särskilt fokus på nyg&shy;etableringar. Hennes expertis
+                  Carolina har gedigen erfarenhet av restaurang&shy;branschen i olika
+                  roller, med särskilt fokus på ny&shy;etableringar. Hennes expertis
                   och passion gör att hon förstår både utmaningarna och
-                  möjligg&shy;heterna med att bygga upp en verksamhet från grunden.
+                  möjlig&shy;heterna med att bygga upp en verksamhet från grunden.
                   Med en stark bakgrund inom organisation, rekrytering och
-                  adming&shy;istration ser hon hur rätt team och strukturer lägger
+                  admin&shy;istration ser hon hur rätt team och strukturer lägger
                   grunden för en framgångsrik och hållbar verksamhet.
                 </p>
               </div>
@@ -133,9 +133,9 @@ console.log(showMoreCarolina, showMoreEmelie)
               <h4 className=" text-3xl font-dream">Emelie</h4>
               <p className="font-body">
                 Emelie kombinerar sin bakgrund inom restaurang med studier i
-                arkg&shy;itektur och erfarenhet av projektg&shy;ledning. Hennes unika
+                arkitekt&shy;ur och erfaren&shy;het av projekt&shy;ledning. Hennes unika
                 kompetens gör att hon ser vikten av detaljer – både i design och
-                genomg&shy;örande – för att skapa en genomtänkt och minnesvärd
+                genom&shy;örande – för att skapa en genomtänkt och minnesvärd
                 gästupplevelse.
               </p>
             </div>
