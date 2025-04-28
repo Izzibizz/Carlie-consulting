@@ -64,8 +64,8 @@ console.log(showMoreCarolina, showMoreEmelie)
   return (
     <section>
       <div className="w-10/12 mx-auto flex flex-col gap-20 laptop:flex-row pt-20 pb-38" ref={mainRef}>
-        <div className=" flex flex-col gap-12 tablet:gap-20 ">
-          <div className="bg-warm-white h-fit w-full gap-6 flex flex-col max-w-[600px]">
+        <div className=" flex flex-col gap-12 tablet:gap-20 laptop:max-w-1/2">
+          <div className="bg-warm-white h-fit w-full gap-6 flex flex-col laptop:w-[500px]">
             <h2 className="text-3xl laptop:text-4xl font-dream">Vilka är vi?</h2>
             <p className="text-justify font-body">
               Eaque ipsa quae ab illo inventore veritatis et quasi architecto
@@ -76,7 +76,7 @@ console.log(showMoreCarolina, showMoreEmelie)
           </div>
           {/* Carolinas section */}
           <div
-            className={`flex flex-col laptop:flex-row gap-4 bg-warm-white border border-3 laptop:border-4 relative h-fit w-fit laptop:w-1/2`}
+            className={`flex flex-col laptop:flex-row gap-4 bg-warm-white border border-3 laptop:border-4 relative h-fit w-fit  flex-none`}
           ref={carolinaRef}>
             <img
               src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1745750264/091c9f2741908ab28d38d3b3013aed83_blt4uq.jpg"
@@ -84,7 +84,7 @@ console.log(showMoreCarolina, showMoreEmelie)
               className={` ${
                 showMoreCarolina
                   ? "w-10/12 mx-auto mt-8 laptop:mt-0 laptop:w-1/2"
-                  : "w-[200px] tablet:w-[350px] laptop:w-[460px] "
+                  : "w-[200px] tablet:w-[350px] laptop:w-[400px] "
               }  h-full  object-cover aspect-[3/4]`}
             />
                             <button
@@ -98,9 +98,9 @@ console.log(showMoreCarolina, showMoreEmelie)
                   Carolina
                 </h3>
             ) : (
-              <div className="flex flex-col gap-4 py-10 w-10/12 mx-auto text-justify animate-fadeIn">
-                <h4 className=" text-3xl font-dream">Carolina</h4>
-                <p className="font-body">
+              <div className="flex flex-col gap-4 py-10 w-10/12 mx-auto laptop:w-full laptop:px-6 text-justify animate-fadeIn">
+                <h4 className=" text-3xl font-dream ">Carolina</h4>
+                <p className="font-body break-words hyphens-auto leading-relaxed">
                   Carolina har gedigen erfarenhet av restaurang&shy;branschen i olika
                   roller, med särskilt fokus på ny&shy;etableringar. Hennes expertis
                   och passion gör att hon förstår både utmaningarna och
@@ -115,7 +115,7 @@ console.log(showMoreCarolina, showMoreEmelie)
         </div>
         {/* Emelies section */}
         <div
-          className={`flex flex-col-reverse laptop:flex-row gap-4 bg-warm-white border-3 laptop:border-4 relative w-fit h-fit laptop:w-1/2 ml-auto transition-all transform duration-300`}
+          className={`flex flex-col-reverse laptop:flex-row gap-4 bg-warm-white border-3 laptop:border-4 relative w-fit h-fit ml-auto transition-all transform duration-300 laptop:max-w-5/12 flex-none` }
         ref={emelieRef}>
                         <button
                 onClick={() => handleShowMoreClick(!showMoreEmelie, "Emelie")}
@@ -129,13 +129,13 @@ console.log(showMoreCarolina, showMoreEmelie)
                 Emelie
               </h3>
           ) : (
-            <div className="flex flex-col gap-4 py-10 w-10/12 mx-auto text-justify animate-fadeIn">
+            <div className="flex flex-col gap-4 py-10 w-10/12 mx-auto laptop:w-full laptop:px-6 text-justify animate-fadeIn">
               <h4 className=" text-3xl font-dream">Emelie</h4>
-              <p className="font-body">
+              <p className="font-body break-words hyphens-auto leading-relaxed">
                 Emelie kombinerar sin bakgrund inom restaurang med studier i
-                arkitekt&shy;ur och erfaren&shy;het av projekt&shy;ledning. Hennes unika
+                arkitekt&shy;ur och erfarenhet av projekt&shy;ledning. Hennes unika
                 kompetens gör att hon ser vikten av detaljer – både i design och
-                genom&shy;örande – för att skapa en genomtänkt och minnesvärd
+                genom&shy;förande, och skapar en genom&shy;tänkt och minnesvärd
                 gästupplevelse.
               </p>
             </div>
@@ -146,7 +146,7 @@ console.log(showMoreCarolina, showMoreEmelie)
             className={` ${
               showMoreEmelie
                 ? "w-10/12 mx-auto mt-8 laptop:mt-0 laptop:w-1/2"
-                : "w-[200px] tablet:w-[350px]  laptop:w-[460px] "
+                : "w-[200px] tablet:w-[350px]  laptop:w-[400px] "
             }  h-auto  object-cover aspect-[3/4] `}
           />
         </div>
