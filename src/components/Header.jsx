@@ -77,7 +77,7 @@ export const Header = () => {
     <header
       className={`fixed h-fit w-full laptop:w-fit z-40 right-0 p-3 py-6 transition-colors duration-1000 laptop:px-6 flex gap-10 ${
         isMobile && isScrolled
-          ? "bg-light-purple/100 bottom-0 "
+          ? "bg-warm-white/90 backdrop-blur border-t-2 bottom-0 "
           : isMobile ? "hidden"
           : isScrolled
             ? "bg-light-purple/100"
@@ -104,7 +104,7 @@ export const Header = () => {
           } bg-stone-800 rounded-full `}
         ></span>
       </div>
-      <img src={isMobile ? textlogo : textlogovert} className={` w-[200px] laptop:w-[40px] cursor-pointer transition-opacity duration-1000 ${
+      <img src={isMobile ? textlogo : textlogovert} className={` w-[200px] laptop:w-[40px] cursor-pointer transition-opacity duration-1000 animate-fadeIn ${
      isScrolled ? "opacity-100" : "opacity-0"
         }`}
         onClick={() => scrollToTop()}/>
