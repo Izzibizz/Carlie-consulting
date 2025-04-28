@@ -75,9 +75,9 @@ export const Header = () => {
   console.log(isScrolled, menuAnimated)
   return (
     <header
-      className={`fixed h-fit w-full laptop:w-fit z-40 right-0 top-[91vh] laptop:top-0 p-3 py-6 transition-colors duration-1000 laptop:px-6 flex gap-10 ${
+      className={`fixed h-fit w-full laptop:w-fit z-40 right-0 p-3 py-6 transition-colors duration-1000 laptop:px-6 flex gap-10 ${
         isMobile
-          ? "bg-light-purple/100"
+          ? "bg-light-purple/100 bottom-0 "
           : isScrolled
             ? "bg-light-purple/100"
             : "bg-light-purple/0"
