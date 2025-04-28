@@ -63,9 +63,9 @@ console.log(showMoreCarolina, showMoreEmelie)
 
   return (
     <section>
-      <div className="w-10/12 mx-auto flex flex-col gap-20 laptop:gap-0 laptop:flex-row pt-20 pb-38" ref={mainRef}>
-        <div className=" flex flex-col gap-6 laptop:gap-20 ">
-          <div className="bg-warm-white p-6 tablet:p-10 laptop:p-0 border-3 laptop:border-0 h-fit w-full gap-6 flex flex-col max-w-[600px]">
+      <div className="w-10/12 mx-auto flex flex-col gap-20 laptop:flex-row pt-20 pb-38" ref={mainRef}>
+        <div className=" flex flex-col gap-12 tablet:gap-20 ">
+          <div className="bg-warm-white h-fit w-full gap-6 flex flex-col max-w-[600px]">
             <h2 className="text-3xl laptop:text-4xl font-dream">Vilka är vi?</h2>
             <p className="text-justify font-body">
               Eaque ipsa quae ab illo inventore veritatis et quasi architecto
@@ -76,15 +76,15 @@ console.log(showMoreCarolina, showMoreEmelie)
           </div>
           {/* Carolinas section */}
           <div
-            className={`flex flex-col laptop:flex-row gap-4 bg-warm-white border border-3 laptop:border-4 relative h-fit w-fit max-w-[700px] laptop:h-[500px]`}
+            className={`flex flex-col laptop:flex-row gap-4 bg-warm-white border border-3 laptop:border-4 relative h-fit w-fit laptop:w-1/2`}
           ref={carolinaRef}>
             <img
               src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1745750264/091c9f2741908ab28d38d3b3013aed83_blt4uq.jpg"
               alt="Carolina"
               className={` ${
                 showMoreCarolina
-                  ? "w-10/12 mx-auto mt-8 laptop:w-1/3"
-                  : "w-[200px] laptop:w-[460px] "
+                  ? "w-10/12 mx-auto mt-8 laptop:mt-0 laptop:w-1/2"
+                  : "w-[200px] tablet:w-[350px] laptop:w-[460px] "
               }  h-full  object-cover aspect-[3/4]`}
             />
                             <button
@@ -115,7 +115,7 @@ console.log(showMoreCarolina, showMoreEmelie)
         </div>
         {/* Emelies section */}
         <div
-          className={`flex flex-col-reverse laptop:flex-row gap-4 bg-warm-white border-3 laptop:border-4 relative w-fit h-fit max-w-[700px] laptop:h-[500px] ml-auto transition-all transform duration-300`}
+          className={`flex flex-col-reverse laptop:flex-row gap-4 bg-warm-white border-3 laptop:border-4 relative w-fit h-fit laptop:w-1/2 ml-auto transition-all transform duration-300`}
         ref={emelieRef}>
                         <button
                 onClick={() => handleShowMoreClick(!showMoreEmelie, "Emelie")}
@@ -145,8 +145,8 @@ console.log(showMoreCarolina, showMoreEmelie)
             alt="Emelie"
             className={` ${
               showMoreEmelie
-                ? "w-10/12 mx-auto pt-8 laptop:w-1/3"
-                : "w-[200px] laptop:w-[460px] "
+                ? "w-10/12 mx-auto mt-8 laptop:mt-0 laptop:w-1/2"
+                : "w-[200px] tablet:w-[350px]  laptop:w-[460px] "
             }  h-auto  object-cover aspect-[3/4] `}
           />
         </div>
