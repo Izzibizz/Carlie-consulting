@@ -77,7 +77,7 @@ export const Header = () => {
     <header
       className={`fixed h-fit w-full laptop:w-fit z-40 right-0 p-3 py-6 transition-colors duration-1000 laptop:px-6 flex gap-10 ${
         isMobile && isScrolled
-          ? "bg-warm-white/98 border-t-2 bottom-0 "
+          ? "bg-warm-white bottom-0 "
           : isMobile ? "hidden"
           : isScrolled
             ? "bg-light-purple/100"
