@@ -36,7 +36,7 @@ export const Home = () => {
 
 
   return (
-    <section>
+    <section className="animate-fadeIn">
       <Hero handleScroll={handleScroll} />
       <div ref={overviewRef}>
         <Overview />
