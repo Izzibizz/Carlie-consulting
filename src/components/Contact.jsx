@@ -17,7 +17,7 @@ export const Contact = () => {
             </div>
            
 <div className="flex flex-col laptop:flex-row">
-            <img src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1747642678/drink-illustration_vu8p2r.svg" alt="drink" className="hidden laptop:block w-48 "/>
+            <img src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1747642678/drink-illustration_vu8p2r.svg" alt="drink" className="hidden laptop:block w-36 "/>
               <div className="flex items-center gap-2 laptop:self-end">
                 <img src={mail} className="w-[25px] h-[25px] laptop:w-[30px] laptop:h-[30px]" />
                 <a
