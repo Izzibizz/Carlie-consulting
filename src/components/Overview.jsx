@@ -23,12 +23,12 @@ export const Overview = () => {
     <section
       className={`${
         isMobile
-          ? "bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1745325921/morph-bg-mobile_w3wbag.svg')]"
-          : "bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1745325925/morph-bg3_zmmd3e.svg')]"
-      } border-b-4 bg-repeat-y bg-top min-h-[100vh] font-dream py-10 items-center flex`}
+          ? "bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1747289218/squares.slim_cgov15.svg')]"
+          : "bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1747290444/morph-bg3-slim_ctfkjr.svg')]"
+      } border-b-3 bg-repeat-y min-w-screen bg-top laptop:bg-cover min-h-[100vh] font-dream py-10 items-center flex`}
     >
-      <div className="w-10/12 laptop:w-8/12 mx-auto bg-warm-white border-3 laptop:border-4 p-8 laptop:pl-12 h-fit">
-        <h3 className="font-dream text-2xl pb-6">Våra Tjänster</h3>
+      <div className="w-10/12 laptop:w-8/12 mx-auto bg-warm-white border-2 laptop:border-3 p-8 laptop:pl-12 h-fit">
+        <h3 className="font-body font-semibold text-2xl pb-6">Våra Tjänster</h3>
         <div className="grid laptop:grid-cols-2 gap-10 font-body">
           {overviewData.map((info, index) => (
             <div key={index} className="relative">

@@ -41,8 +41,8 @@ export const Hero = ({ handleScroll }) => {
       <img
         src={` ${
           isMobile
-            ? "https://res.cloudinary.com/dwjbiceg4/image/upload/v1745561331/Carlie-Illustration-mat-halv_agjk7f.svg"
-            : "https://res.cloudinary.com/dwjbiceg4/image/upload/v1745504693/Carlie-Illustration-mat_eterfh.svg"
+            ? "https://res.cloudinary.com/dwjbiceg4/image/upload/v1747291072/Carlie-Illustration-mat-halv-low_i2azcj.svg"
+            : "https://res.cloudinary.com/dwjbiceg4/image/upload/v1747291075/Carlie-Illustration-mat-low_cpzjod.svg"
         }`}
         alt="food illustration"
         className="w-11/12 mx-auto"
