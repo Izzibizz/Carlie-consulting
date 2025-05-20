@@ -16,9 +16,9 @@ export const Contact = () => {
               </h4>
             </div>
            
-<div className="flex flex-col laptop:flex-row">
+<div className="flex justify-between laptop:justify-start">
             <img src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1747642678/drink-illustration_vu8p2r.svg" alt="drink" className="hidden laptop:block w-36 "/>
-              <div className="flex items-center gap-2 laptop:self-end">
+              <div className="flex items-center gap-2 self-end">
                 <img src={mail} className="w-[25px] h-[25px] laptop:w-[30px] laptop:h-[30px]" />
                 <a
                   href="mailto:contact@carlieconsulting.com"
@@ -27,7 +27,7 @@ export const Contact = () => {
                   contact@carlieconsulting.com
                 </a>
               </div>
-              <img src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1747642678/drink-illustration_vu8p2r.svg" alt="drink" className="w-26 self-end tablet:hidden "/>
+              <img src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1747642678/drink-illustration_vu8p2r.svg" alt="drink" className="w-16 self-end tablet:hidden "/>
             </div>
 </div>
           
