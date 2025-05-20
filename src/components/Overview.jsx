@@ -32,16 +32,24 @@ export const Overview = () => {
         <div className="grid laptop:grid-cols-2 gap-10 font-body">
           {overviewData.map((info, index) => (
             <div key={index} className="relative">
-             <div className={`${index === 0 && "opacity-0"} bg-light-purple rounded-full w-[40px] h-[40px] left-[-20px] top-[-15px] absolute text-center`}/>
+              <div
+                className={`${
+                  index === 0 && "opacity-0"
+                } bg-light-purple rounded-full w-[40px] h-[40px] left-[-20px] top-[-15px] absolute text-center`}
+              />
               <h3 className="font-semibold z-20 relative">{info.title}</h3>
               {info.text.length > 1 ? (
                 <ul className="list-disc list-outside space-y-2 pl-5">
                   {info.text.map((listObj, subIndex) => (
-                    <li key={subIndex} className="break-words ">{listObj}</li>
+                    <li key={subIndex} className="break-words ">
+                      {listObj}
+                    </li>
                   ))}
                 </ul>
               ) : (
-                <p className="text-justify laptop:w-10/12 break-words">{info.text[0]}</p>
+                <p className="text-justify laptop:w-10/12 break-words">
+                  {info.text[0]}
+                </p>
               )}
             </div>
           ))}

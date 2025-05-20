@@ -57,7 +57,6 @@ export const About = () => {
     };
   }, []);
 
-
   console.log(showMoreCarolina, showMoreEmelie);
 
   return (
@@ -72,18 +71,20 @@ export const About = () => {
               Vilka är vi?
             </h2>
             <p className="text-justify font-body">
-             Emelie & Carolina är två entreprenörer med gedigen bakgrund från
+              Emelie & Carolina är två entreprenörer med gedigen bakgrund från
               restaurang&shy;branschen. Tillsammans erbjuder vi expertis inom
-              koncept&shy;utveckling, gästresa, organisation och service&shy;arbete. Vi
-              arbetar strukturerat med att skapa hållbara lösningar för att
-              stärka restaurang&shy;koncept, från ny&shy;öppningar till vidare&shy;utveckling
-              av befintlig verksamhet.
+              koncept&shy;utveckling, gästresa, organisation och
+              service&shy;arbete. Vi arbetar strukturerat med att skapa hållbara
+              lösningar för att stärka restaurang&shy;koncept, från
+              ny&shy;öppningar till vidare&shy;utveckling av befintlig
+              verksamhet.
             </p>
             <p className="italic font-body">
-            Vårt mål är att bidra med praktisk och strategisk kunskap för att hjälpa er att nå framgång i en konkurrensutsatt marknad.
+              Vårt mål är att bidra med praktisk och strategisk kunskap för att
+              hjälpa er att nå framgång i en konkurrensutsatt marknad.
             </p>
           </div>
-     {/*      <img src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1747647679/fika-illustration-carlie-consulting_vmobpx.svg" alt="fika illustration" className="w-50"/> */}
+          {/*      <img src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1747647679/fika-illustration-carlie-consulting_vmobpx.svg" alt="fika illustration" className="w-50"/> */}
           {/* Carolinas section */}
           <div
             className={`flex flex-col tablet:max-w-[500px] laptop:max-w-full desktop:flex-row gap-4 bg-warm-white border border-3 relative h-fit w-fit  flex-none`}
@@ -102,7 +103,7 @@ export const About = () => {
               onClick={() => handleShowMoreClick(!showMoreCarolina, "Carolina")}
               className={`z-20 absolute bg-light-purple font-body rounded-full h-[100px] w-[100px] ${
                 showMoreCarolina
-                  ? "right-[-20px] bottom-[-40px]" 
+                  ? "right-[-20px] bottom-[-40px]"
                   : "bottom-[-30px] right-[-40px]"
               }  cursor-pointer`}
             >
@@ -114,7 +115,9 @@ export const About = () => {
               </h3>
             ) : (
               <div className="flex flex-col gap-4 py-10 laptop:pt-0 desktop:py-10 w-10/12 mx-auto laptop:w-full laptop:px-6 text-justify animate-fadeIn">
-                <h4 className=" text-3xl font-dream laptop:self-end">Carolina</h4>
+                <h4 className=" text-3xl font-dream laptop:self-end">
+                  Carolina
+                </h4>
                 <p className="font-body break-words hyphens-auto leading-relaxed text-sm">
                   Carolina har gedigen erfarenhet av restaurang&shy;branschen i
                   olika roller, med särskilt fokus på ny&shy;etableringar.

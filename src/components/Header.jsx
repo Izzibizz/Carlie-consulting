@@ -2,32 +2,50 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { RxCross1 } from "react-icons/rx";
 import { useWebsiteStore } from "../stores/useWebsiteStore";
-import textlogovert from "/carlie-consulting-text-heading.svg"
-import textlogo from "/carlie-consulting-text-heading-1.svg"
+import textlogovert from "/carlie-consulting-text-heading.svg";
+import textlogo from "/carlie-consulting-text-heading-1.svg";
 
 export const Header = () => {
   const dropdownRef = useRef();
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1025)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1025);
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuAnimated, setMenuAnimated] = useState(false);
-  const {  setScrollToContact,  setScrollToAbout, setScrollToOverview } = useWebsiteStore()
+  const { setScrollToContact, setScrollToAbout, setScrollToOverview } =
+    useWebsiteStore();
 
   const directions = [
     { name: "Hem", onClick: () => scrollToTop() },
-    { name: "Tjänster", onClick: () => { setScrollToOverview(true); setIsOpen(false); } },
-    { name: "Om oss", onClick: () => { setScrollToAbout(true) ; setIsOpen(false); } },
-/*     { name: "Boka en konsultation", onClick: () => { handleSendEmail() ; setIsOpen(false); } }, */
-    { name: "Kontakt", onClick: () => { setScrollToContact(true) ; setIsOpen(false); } },
+    {
+      name: "Tjänster",
+      onClick: () => {
+        setScrollToOverview(true);
+        setIsOpen(false);
+      },
+    },
+    {
+      name: "Om oss",
+      onClick: () => {
+        setScrollToAbout(true);
+        setIsOpen(false);
+      },
+    },
+    /*     { name: "Boka en konsultation", onClick: () => { handleSendEmail() ; setIsOpen(false); } }, */
+    {
+      name: "Kontakt",
+      onClick: () => {
+        setScrollToContact(true);
+        setIsOpen(false);
+      },
+    },
   ];
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    setIsOpen(false)
+    setIsOpen(false);
   };
 
-
-/*   const handleSendEmail = () => {
+  /*   const handleSendEmail = () => {
     window.location.href = "mailto:hello@example.com?subject=Meeting%20Request&body=Hi%20there!"
   }; */
 
@@ -40,10 +58,10 @@ export const Header = () => {
         setIsScrolled(false);
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     handleScroll();
-  
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -60,28 +78,28 @@ export const Header = () => {
     };
   }, []);
 
-  
   useEffect(() => {
     if (!isScrolled) {
       const waveInterval = setInterval(() => {
         setMenuAnimated(true);
-        setTimeout(() => setMenuAnimated(false), 5000); 
+        setTimeout(() => setMenuAnimated(false), 5000);
       }, 5000);
-  
+
       return () => clearInterval(waveInterval);
     }
   }, [isScrolled]);
 
-  console.log(isScrolled, menuAnimated)
+  console.log(isScrolled, menuAnimated);
   return (
     <header
       className={`fixed h-fit w-full laptop:w-fit z-40 right-0 p-3 py-6 transition-colors duration-1000 laptop:px-6 flex gap-10 ${
         isMobile && isScrolled
           ? "bg-warm-white/98 border-t-2 bottom-0 "
-          : isMobile ? "hidden"
+          : isMobile
+          ? "hidden"
           : isScrolled
-            ? "bg-light-purple/100"
-            : "bg-light-purple/0"
+          ? "bg-light-purple/100"
+          : "bg-light-purple/0"
       } flex flex-row-reverse laptop:flex-col items-center justify-between gap-4 laptop:rounded-bl-2xl`}
     >
       <div
@@ -104,11 +122,14 @@ export const Header = () => {
           } bg-stone-800 rounded-full `}
         ></span>
       </div>
-      <img src={isMobile ? textlogo : textlogovert} className={` w-[200px] laptop:w-[40px] cursor-pointer transition-opacity duration-1000 animate-fadeIn ${
-     isScrolled ? "opacity-100" : "opacity-0"
+      <img
+        src={isMobile ? textlogo : textlogovert}
+        className={` w-[200px] laptop:w-[40px] cursor-pointer transition-opacity duration-1000 animate-fadeIn ${
+          isScrolled ? "opacity-100" : "opacity-0"
         }`}
-        onClick={() => scrollToTop()}/>
-   {/*    <img
+        onClick={() => scrollToTop()}
+      />
+      {/*    <img
         src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1745326032/c-2.small_h01hqi.svg"
         alt="logo carlie consulting"
         className={`w-8 h-8  cursor-pointer transition-opacity duration-1000 ${

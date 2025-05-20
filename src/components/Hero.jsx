@@ -1,12 +1,8 @@
 import { useState, useEffect } from "react";
 import { SlArrowDown } from "react-icons/sl";
 
-
-
-
 export const Hero = ({ handleScroll }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,11 +28,21 @@ export const Hero = ({ handleScroll }) => {
       <div className="w-11/12 laptop:w-9/12 self-center gap-4 flex flex-col z-20">
         {" "}
         <h1 className="font-dream text-3xl tablet:text-[40px] laptop:text-[60px] text-end flex flex-col">
-         Helhetslösningar  <br className="laptop:hidden" /> för din
-          <span className="tablet:text-[50px] laptop:text-[80px]"> restaurang&shy;verksamhet</span>
+          Helhetslösningar <br className="laptop:hidden" /> för din
+          <span className="tablet:text-[50px] laptop:text-[80px]">
+            {" "}
+            restaurang&shy;verksamhet
+          </span>
         </h1>
-        <h2 className="font-body font-light text-xl laptop:text-3xl text-end">Från idé till lönsam drift</h2>
-        <button className="bg-light-purple rounded-4xl py-2 px-4 w-fit font-body self-end flex gap-3 items-center cursor-pointer hover:scale-105 text-sm tablet:text-base" onClick={() => handleScroll()}>Läs mer <SlArrowDown /></button>
+        <h2 className="font-body font-light text-xl laptop:text-3xl text-end">
+          Från idé till lönsam drift
+        </h2>
+        <button
+          className="bg-light-purple rounded-4xl py-2 px-4 w-fit font-body self-end flex gap-3 items-center cursor-pointer hover:scale-105 text-sm tablet:text-base"
+          onClick={() => handleScroll()}
+        >
+          Läs mer <SlArrowDown />
+        </button>
       </div>
       <img
         src={` ${
