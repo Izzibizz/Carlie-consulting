@@ -6,7 +6,7 @@ export const Contact = () => {
     <section className="min-h-screen tablet:min-h-fit bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1745326427/d11601cfa9fc6820ba2ea9f6aea22dbc_aidsru.jpg')] bg-cover bg-left-top pb-32 laptop:pb-0">
       <div className="w-11/12 mx-auto py-20 laptop:py-40">
 
-        <div className="flex flex-col tablet:grid grid-cols-2 laptop:border-l-[3px] laptop:border-b-[3px] p-6 laptop:p-12 gap-12 laptop:gap-20 w-full h-full">
+        <div className="flex flex-col tablet:grid grid-cols-2 p-6  gap-12 laptop:gap-20 w-full h-full">
           
           <div className="flex flex-col gap-6 justify-between">
             <div className="flex flex-col gap-2 text-left">
