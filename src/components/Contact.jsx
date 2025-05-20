@@ -7,7 +7,7 @@ export const Contact = () => {
       <div className="w-11/12 laptop:w-10/12 mx-auto py-20 laptop:py-40">
         <div className="flex flex-col tablet:grid grid-cols-2 p-6  gap-12 laptop:gap-20 w-full h-full">
           <div className="flex flex-col gap-6 justify-between">
-            <div className="flex flex-col gap-2 text-left">
+            <div className="flex flex-col gap-4 text-left">
               <h3 className="font-dream text-4xl laptop:text-[40px]">
                 Kontakta oss
               </h3>
@@ -15,7 +15,7 @@ export const Contact = () => {
                 Vi erbjuder vägledning genom hela processen, <br /> kontakta oss
                 för en första konsultation eller offert
               </h4>
-               <div className="flex items-center gap-2">
+               <div className="flex items-center gap-2 mt-6">
                 <img
                   src={mail}
                   className="w-[25px] h-[25px] laptop:w-[30px] laptop:h-[30px]"
