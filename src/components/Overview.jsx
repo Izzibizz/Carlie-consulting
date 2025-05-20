@@ -28,7 +28,7 @@ export const Overview = () => {
       } border-b-3 bg-repeat-y min-w-screen bg-top laptop:bg-cover min-h-[100vh] font-dream py-10 items-center flex`}
     >
       <div className="w-10/12 laptop:w-8/12 mx-auto bg-warm-white border-2 laptop:border-3 p-8 laptop:pl-12 h-fit">
-        <h3 className="font-body font-semibold text-2xl pb-6">Våra Tjänster</h3>
+        <h3 className="font-dream text-3xl pb-6">Våra Tjänster</h3>
         <div className="grid laptop:grid-cols-2 gap-10 font-body">
           {overviewData.map((info, index) => (
             <div key={index} className="relative">

@@ -25,7 +25,7 @@ export const Hero = ({ handleScroll }) => {
         alt="Carlie Consulting logo"
         className="w-20 h-20 laptop:w-32 laptop:h-32"
       />
-      <div className="w-11/12 laptop:w-9/12 self-center gap-4 flex flex-col z-20">
+      <div className="w-11/12 laptop:w-9/12 self-center gap-4 flex flex-col z-20 desktop:flex-grow">
         {" "}
         <h1 className="font-dream text-3xl tablet:text-[40px] laptop:text-[60px] text-end flex flex-col">
           Helhetslösningar <br className="laptop:hidden" /> för din
@@ -51,7 +51,7 @@ export const Hero = ({ handleScroll }) => {
             : "https://res.cloudinary.com/dwjbiceg4/image/upload/v1747291075/Carlie-Illustration-mat-low_cpzjod.svg"
         }`}
         alt="food illustration"
-        className="w-11/12 mx-auto"
+        className="w-11/12 mx-auto desktop:max-h-[50vh] object-contain"
       />
     </section>
   );
