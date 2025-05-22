@@ -103,11 +103,11 @@ export const About = () => {
               onClick={() => handleShowMoreClick(!showMoreCarolina, "Carolina")}
               className={`z-20 absolute bg-light-purple font-body rounded-full h-[100px] w-[100px] ${
                 showMoreCarolina
-                  ? "right-[-20px] bottom-[-40px]"
+                  ? "right-[-20px] bottom-[-40px] text-2xl"
                   : "bottom-[-30px] right-[-40px]"
               }  cursor-pointer`}
             >
-              {showMoreCarolina ? "Stäng" : "Läs mer"}
+              {showMoreCarolina ? "x" : "Läs mer"}
             </button>
             {!showMoreCarolina ? (
               <h3 className=" text-2xl laptop:text-[30px] absolute bottom-1 left-2 laptop:bottom-3 laptop:left-5 font-dream text-warm-white">
@@ -141,11 +141,11 @@ export const About = () => {
             onClick={() => handleShowMoreClick(!showMoreEmelie, "Emelie")}
             className={`z-20 absolute font-body bg-light-purple rounded-full h-[100px] w-[100px] ${
               showMoreEmelie
-                ? "bottom-[-70px] left-[-20px]"
+                ? "bottom-[-70px] left-[-20px] text-2xl"
                 : "bottom-[-50px] left-[-50px]"
             } cursor-pointer`}
           >
-            {showMoreEmelie ? "Stäng" : "Läs mer"}
+            {showMoreEmelie ? "x" : "Läs mer"}
           </button>
           {!showMoreEmelie ? (
             <h3 className=" text-2xl laptop:text-[30px] absolute bottom-1 right-2 laptop:bottom-3 laptop:right-5 text-warm-white font-dream">
