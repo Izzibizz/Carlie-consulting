@@ -19,17 +19,17 @@ export const Hero = ({ handleScroll }) => {
   }, []);
 
   return (
-    <section className="h-[80vh] laptop:h-[95vh] pt-10 px-4 laptop:px-10 flex flex-col justify-between">
+    <section className="min-h-[70vh] pt-10 px-4 laptop:px-10 flex flex-col justify-between">
       <img
         src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1745326038/c-2_d0p3kn.svg"
         alt="Carlie Consulting logo"
-        className="w-20 h-20 laptop:w-32 laptop:h-32"
+        className="w-20 h-20 laptop:w-32 laptop:h-32 dekstop:w-28 desktop:h-28"
       />
-      <div className="w-11/12 laptop:w-9/12 self-center gap-4 flex flex-col z-20 desktop:flex-grow">
+      <div className="w-11/12 laptop:w-9/12 self-center gap-4 flex flex-col z-20 flex-shrink">
         {" "}
-        <h1 className="font-dream text-3xl tablet:text-[40px] laptop:text-[60px] text-end flex flex-col">
+        <h1 className="font-dream text-3xl tablet:text-[40px] laptop:text-[60px] dekstop:text-[50px] text-end flex flex-col">
           Helhetslösningar <br className="laptop:hidden" /> för din
-          <span className="tablet:text-[50px] laptop:text-[80px]">
+          <span className="tablet:text-[50px] laptop:text-[80px]dekstop:text-[70px]">
             {" "}
             restaurang&shy;verksamhet
           </span>
@@ -51,7 +51,7 @@ export const Hero = ({ handleScroll }) => {
             : "https://res.cloudinary.com/dwjbiceg4/image/upload/v1747291075/Carlie-Illustration-mat-low_cpzjod.svg"
         }`}
         alt="food illustration"
-        className="w-11/12 mx-auto desktop:max-h-[50vh] object-contain"
+        className="w-11/12 mx-auto object-contain"
       />
     </section>
   );
