@@ -19,7 +19,7 @@ export const Hero = ({ handleScroll }) => {
   }, []);
 
   return (
-    <section className="min-h-[70vh] pt-10 px-4 laptop:px-10 flex flex-col justify-between">
+    <section className="min-h-[85vh] pt-10 px-4 laptop:px-10 flex flex-col justify-between">
       <img
         src="https://res.cloudinary.com/dwjbiceg4/image/upload/v1745326038/c-2_d0p3kn.svg"
         alt="Carlie Consulting logo"
@@ -27,14 +27,14 @@ export const Hero = ({ handleScroll }) => {
       />
       <div className="w-11/12 laptop:w-9/12 self-center gap-4 flex flex-col z-20 flex-shrink">
         {" "}
-        <h1 className="font-dream text-3xl tablet:text-[40px] laptop:text-[60px] dekstop:text-[50px] text-end flex flex-col">
-          Helhetslösningar <br className="laptop:hidden" /> för din
-          <span className="tablet:text-[50px] laptop:text-[80px]dekstop:text-[70px]">
+        <h1 className="font-dream text-3xl tablet:text-[50px] laptop:text-[60px] dekstop:text-[50px] text-end flex flex-col">
+          Helhetslösningar <br className="tablet:hidden" /> för din
+          <span className="tablet:text-[60px] laptop:text-[80px]dekstop:text-[70px]">
             {" "}
             restaurang&shy;verksamhet
           </span>
         </h1>
-        <h2 className="font-body font-light text-xl laptop:text-3xl text-end">
+        <h2 className="font-body font-light text-xl tablet:text-4xl laptop:text-3xl text-end">
           Från idé till lönsam drift
         </h2>
         <button

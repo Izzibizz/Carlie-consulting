@@ -25,7 +25,7 @@ export const Overview = () => {
         isMobile
           ? "bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1747289218/squares.slim_cgov15.svg')]"
           : "bg-[url('https://res.cloudinary.com/dwjbiceg4/image/upload/v1747290444/morph-bg3-slim_ctfkjr.svg')]"
-      } border-b-3 bg-repeat-y min-w-screen bg-top laptop:bg-cover min-h-[100vh] font-dream py-10 items-center flex py-26`}
+      } border-b-3 bg-repeat-y min-w-screen bg-top laptop:bg-cover min-h-[100vh] font-dream py-10 items-center flex py-14`}
     >
       <div className="w-10/12 laptop:w-8/12 mx-auto bg-warm-white border-2 laptop:border-3 p-8 laptop:pl-12 h-fit">
         <h3 className="font-dream text-3xl pb-6">Våra Tjänster</h3>
